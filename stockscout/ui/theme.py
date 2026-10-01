@@ -101,6 +101,12 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{ background: {CARD}; border-ra
 .stTabs [data-baseweb="tab"] {{ font-weight: 600; }}
 div[data-testid="stMetric"] {{ overflow-wrap: anywhere; }}
 .disclaimer {{ color: {FAINT}; font-size: .74rem; text-align: center; padding-top: 1.5rem; }}
+.logo {{ display: inline-flex; align-items: center; gap: 6px; padding-top: 2px; }}
+.logo-mark {{ position: relative; display: inline-block; width: 1.55rem; height: 1.7rem; }}
+.logo-mark span {{ position: absolute; top: -.1rem; font-size: 1.9rem; font-weight: 800; line-height: 1.7rem; }}
+.lm-a {{ left: 0; color: #2563eb; }}
+.lm-b {{ left: .5rem; top: .05rem; color: #16a34a; opacity: .92; }}
+.logo-name {{ font-weight: 800; font-size: 1.2rem; letter-spacing: -.01em; }}
 @keyframes slideDown {{ from {{ opacity: 0; transform: translateY(-14px); }} to {{ opacity: 1; transform: none; }} }}
 .st-key-panel {{ animation: slideDown .32s ease-out; }}
 .st-key-nav [data-baseweb="button-group"], .st-key-nav div[role="radiogroup"] {{ width: 100%; }}
@@ -110,6 +116,12 @@ div[data-testid="stMetric"] {{ overflow-wrap: anywhere; }}
 @media (max-width: 640px) {{ .block-container {{ padding: .8rem .8rem 2rem; }} }}
 </style>
 """
+
+
+def logo_html() -> str:
+    """Wordmark: two overlapping dollar signs (blue + green) followed by the name."""
+    return ("<span class='logo'><span class='logo-mark'><span class='lm-a'>&#36;</span><span class='lm-b'>&#36;</span></span>"
+            "<span class='logo-name'>Stock<span style='color:#2563eb'>Scout</span></span></span>")
 
 
 def inject_css() -> None:

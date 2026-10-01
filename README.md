@@ -80,7 +80,7 @@ StockScout/
       tabs.py                  #   Financials / Health / Valuation / Peers / Ask panels
       landing.py               #   market strip + live stock cards
       insights.py, qa.py       #   rule-based insight bullets; offline Q&A (no LLM)
-  scripts/                     # calibrate.py, build_symbols.py, build_seed_quotes.py
+  scripts/                     # calibrate.py, build_symbols.py, build_seed_quotes.py, build_logo.py
   tests/                       # test_engine.py (pytest), test_fetch.py, test_symbols.py, fixtures/
   docs/                        # demo_script.md, report_outline.md, verdict_template.md
 ```

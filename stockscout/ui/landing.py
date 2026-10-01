@@ -98,12 +98,13 @@ def render(fetch_quotes: Callable, on_pick: Callable[[str], None]) -> None:
 
 
 def features() -> None:
-    items = [("📈", "Live candlesticks", "1D to 5Y candles with volume and SMA 20/50/200 that tick with the market."),
-             ("🧮", "12 health ratios", "ROE, ROCE, debt, margins, cash flow and Altman Z, each explained in plain words."),
-             ("🎯", "Cited verdict", "Invest / Watch / Avoid with the exact figures and statement tables behind it."),
-             ("🔍", "Reverse DCF", "See what growth today's price already assumes - and test your own what-ifs.")]
+    items = [("Live candlesticks", "1D to 5Y candles with volume and SMA 20/50/200 that tick with the market."),
+             ("12 health ratios", "ROE, ROCE, debt, margins, cash flow and Altman Z, each explained in plain words."),
+             ("Cited verdict", "Invest / Watch / Avoid with the exact figures and statement tables behind it."),
+             ("Reverse DCF", "See what growth today's price already assumes - and test your own what-ifs.")]
     cols = st.columns(len(items))
-    for c, (icon, title, text) in zip(cols, items):
+    for c, (title, text) in zip(cols, items):
         with c, st.container(border=True):
-            st.markdown(f"<div style='font-size:1.4rem'>{icon}</div><div style='font-weight:700;margin:2px 0'>{title}</div>"
+            st.markdown(f"<div style='height:3px;width:28px;border-radius:2px;background:#2563eb;margin-bottom:8px'></div>"
+                        f"<div style='font-weight:700;margin:2px 0'>{title}</div>"
                         f"<div class='muted'>{text}</div>", unsafe_allow_html=True)

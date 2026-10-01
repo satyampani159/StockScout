@@ -16,6 +16,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import streamlit as st
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 if str(ROOT) not in sys.path:
@@ -28,11 +29,11 @@ from stockscout.engine.ratios import ratio_history  # noqa: E402
 from stockscout.engine.technicals import cross_points, price_stats, trend_forecast  # noqa: E402
 from stockscout.engine.verdict import build_bundle, peer_median_pe, reprice  # noqa: E402
 from stockscout.ui import charts, insights, landing, tabs  # noqa: E402
-from stockscout.ui.theme import (ACCENT, DOWN, MUTED, UP, VERDICT, cr, inject_css, inr, kpi, num, pct, pill)  # noqa: E402
+from stockscout.ui.theme import (ACCENT, DOWN, MUTED, UP, VERDICT, cr, inject_css, inr, kpi, logo_html, num, pct, pill)  # noqa: E402
 
 USE_LLM = False
 
-st.set_page_config(page_title="StockScout", page_icon="📈", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="StockScout", page_icon=Image.open(ROOT / "stockscout" / "ui" / "assets" / "favicon.png"), layout="wide", initial_sidebar_state="collapsed")
 inject_css()
 
 
@@ -72,12 +73,11 @@ if "_pending" in st.session_state:
 st.session_state.setdefault("cadence", 30)
 st.session_state.setdefault("nonce", {})
 top = st.columns([1.1, 3.4, 0.7])
-top[0].markdown("<div style='font-weight:800;font-size:1.15rem;padding-top:6px'>📈 Stock<span style='color:#2563eb'>Scout</span></div>",
-                unsafe_allow_html=True)
+top[0].markdown(logo_html(), unsafe_allow_html=True)
 labels = [f"{n} ({s})" for s, n in _universe()]
 choice = top[1].selectbox("Company", labels, index=None, key="company", label_visibility="collapsed",
                           placeholder=f"Search {len(labels):,} NSE companies by name or symbol…")
-with top[2].popover("⚙ Live", width="stretch"):
+with top[2].popover("Live settings", width="stretch"):
     st.session_state["cadence"] = st.selectbox("Refresh every (s)", [15, 30, 60], index=[15, 30, 60].index(
         st.session_state["cadence"]), help="Price/analysis re-poll cadence while the market is open.")
     st.caption("Quotes from Yahoo Finance are ~15 min delayed. Fundamentals are fetched once per company and cached 24h.")
@@ -197,8 +197,8 @@ _every = run_every(st.session_state["cadence"])
 st.fragment(run_every=_every)(header)()
 
 # ------------------------------------------------------------------ 2) section buttons + slide-down panel
-NAV = {"📊 Financials": "fin", "🩺 Health": "health", "⚖️ Valuation": "val", "👥 Peers": "peers", "💬 Ask": "ask"}
-_p = {"fin": "📊 Financials", "health": "🩺 Health", "val": "⚖️ Valuation", "peers": "👥 Peers", "ask": "💬 Ask"}.get(
+NAV = {"Financials": "fin", "Health": "health", "Valuation": "val", "Peers": "peers", "Ask": "ask"}
+_p = {"fin": "Financials", "health": "Health", "val": "Valuation", "peers": "Peers", "ask": "Ask"}.get(
     st.query_params.get("p", ""))
 if _p and "nav" not in st.session_state:
     st.session_state["nav"] = _p
@@ -298,7 +298,7 @@ def board() -> None:
                 st.caption(f"Intraday view: each SMA averages the last N {bar} bars (SMA 50 = last 50 bars). "
                            "Switch to 6M / 1Y / 5Y for the day-based trend averages and the projection.")
             if short:
-                st.caption("⚠ " + ", ".join(f"SMA {n}" for n in short) + f" needs more history than is available ({len(closes)} bars).")
+                st.caption("Note: " + ", ".join(f"SMA {n}" for n in short) + f" needs more history than is available ({len(closes)} bars).")
 
     lender_ = eng.get("sector_kind") == "financial"
     with vc, st.container(border=True):
@@ -333,7 +333,7 @@ def board() -> None:
         c1_.markdown(kpi("Net margin", pct(rr.get("npm")), "kept per ₹100 sold"), unsafe_allow_html=True)
         c2_.markdown(kpi("FCF margin", pct(rr.get("fcf_margin")), "real cash per ₹100 sold"), unsafe_allow_html=True)
         for w in ver.get("warnings", [])[:2]:
-            st.caption(f"⚠ {w}")
+            st.caption(f"Note: {w}")
 
     # ---- insights + evidence
     hist = ratio_history(fin)
@@ -356,9 +356,9 @@ def board() -> None:
     with i2, st.container(border=True):
         st.markdown("**Evidence behind the call**")
         for x in ver["reasons"]:
-            st.success(x, icon="✅")
+            st.success(x)
         for x in ver["risks"]:
-            st.warning(x, icon="⚠️")
+            st.warning(x)
         if not ver["reasons"] and not ver["risks"]:
             st.caption("No signal met a threshold either way.")
 
