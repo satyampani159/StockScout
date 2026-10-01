@@ -1,0 +1,188 @@
+{
+  "ticker": "RELIANCE.NS",
+  "name": "Reliance Industries Limited",
+  "currency": "INR",
+  "units": "INR Cr",
+  "price": 1187.0,
+  "mcap": 1606304.45,
+  "pe": 21.503622,
+  "statements": {
+    "pnl": [
+      {
+        "year": 2022,
+        "revenue": null,
+        "ebitda": null,
+        "ebit": null,
+        "pat": null,
+        "interest": null
+      },
+      {
+        "year": 2023,
+        "revenue": 877835.0,
+        "ebitda": 153307.0,
+        "ebit": 113004.0,
+        "pat": 66702.0,
+        "interest": 18958.0
+      },
+      {
+        "year": 2024,
+        "revenue": 901064.0,
+        "ebitda": 176944.0,
+        "ebit": 126112.0,
+        "pat": 69621.0,
+        "interest": 21772.0
+      },
+      {
+        "year": 2025,
+        "revenue": 964693.0,
+        "ebitda": 181274.0,
+        "ebit": 128138.0,
+        "pat": 69648.0,
+        "interest": 22121.0
+      },
+      {
+        "year": 2026,
+        "revenue": 1057219.0,
+        "ebitda": 204906.0,
+        "ebit": 147218.0,
+        "pat": 80775.0,
+        "interest": 24056.0
+      }
+    ],
+    "bs": [
+      {
+        "year": 2022,
+        "equity": null,
+        "debt": null,
+        "assets": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "retained_earnings": null,
+        "receivables": null,
+        "inventory": null
+      },
+      {
+        "year": 2023,
+        "equity": 828881.0,
+        "debt": 334392.0,
+        "assets": 1607431.0,
+        "current_assets": 425296.0,
+        "current_liabilities": 395743.0,
+        "retained_earnings": 295739.0,
+        "receivables": 28448.0,
+        "inventory": 140008.0
+      },
+      {
+        "year": 2024,
+        "equity": 925788.0,
+        "debt": 346142.0,
+        "assets": 1755986.0,
+        "current_assets": 470100.0,
+        "current_liabilities": 397367.0,
+        "retained_earnings": 339787.0,
+        "receivables": 31628.0,
+        "inventory": 152770.0
+      },
+      {
+        "year": 2025,
+        "equity": 1009626.0,
+        "debt": 369575.0,
+        "assets": 1950121.0,
+        "current_assets": 499270.0,
+        "current_liabilities": 453737.0,
+        "retained_earnings": 391943.0,
+        "receivables": 42121.0,
+        "inventory": 146062.0
+      },
+      {
+        "year": 2026,
+        "equity": 1085866.0,
+        "debt": 398000.0,
+        "assets": 2178140.0,
+        "current_assets": 594249.0,
+        "current_liabilities": 541254.0,
+        "retained_earnings": 463644.0,
+        "receivables": 58491.0,
+        "inventory": 166941.0
+      }
+    ],
+    "cf": [
+      {
+        "year": 2022,
+        "op": null,
+        "inv": null,
+        "fin": null
+      },
+      {
+        "year": 2023,
+        "op": 115032.0,
+        "inv": -91235.0,
+        "fin": 10455.0
+      },
+      {
+        "year": 2024,
+        "op": 158788.0,
+        "inv": -113581.0,
+        "fin": -16646.0
+      },
+      {
+        "year": 2025,
+        "op": 178703.0,
+        "inv": -137535.0,
+        "fin": -31891.0
+      },
+      {
+        "year": 2026,
+        "op": 192113.0,
+        "inv": -101089.0,
+        "fin": -51549.0
+      }
+    ]
+  },
+  "ratios_src": {
+    "roe": 8.91,
+    "roce": 10.3,
+    "de": 0.37
+  },
+  "peers": [
+    {
+      "ticker": "IOC.NS",
+      "pe": 5.66,
+      "mcap": 190537.87,
+      "roe": null,
+      "roce": 18.66
+    },
+    {
+      "ticker": "BPCL.NS",
+      "pe": 8.49,
+      "mcap": 131543.49,
+      "roe": null,
+      "roce": 25.64
+    },
+    {
+      "ticker": "HINDPETRO.NS",
+      "pe": 44.61,
+      "mcap": 74548.26,
+      "roe": null,
+      "roce": 22.24
+    },
+    {
+      "ticker": "MRPL.NS",
+      "pe": 10.66,
+      "mcap": 29669.74,
+      "roe": null,
+      "roce": 18.03
+    },
+    {
+      "ticker": "CHENNPETRO.NS",
+      "pe": 5.12,
+      "mcap": 21388.14,
+      "roe": null,
+      "roce": 34.94
+    }
+  ],
+  "ar_url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2025-26.pdf#page=169",
+  "fetched_at": "2026-10-01T03:31:34.528722+00:00",
+  "source": "live",
+  "notes": "yfinance+screener live"
+}

@@ -1,0 +1,195 @@
+{
+  "ticker": "INFY.NS",
+  "name": "Infosys Limited",
+  "currency": "INR",
+  "units": "INR Cr",
+  "price": 994.1,
+  "mcap": 402644.66,
+  "pe": 12.787497,
+  "statements": {
+    "pnl": [
+      {
+        "year": 2022,
+        "revenue": null,
+        "ebitda": null,
+        "ebit": null,
+        "pat": null,
+        "interest": null
+      },
+      {
+        "year": 2023,
+        "revenue": 174753.25,
+        "ebitda": 44945.32,
+        "ebit": 39917.28,
+        "pat": 28604.19,
+        "interest": 335.84
+      },
+      {
+        "year": 2024,
+        "revenue": 178111.67,
+        "ebitda": 47660.85,
+        "ebit": 42239.39,
+        "pat": 30388.95,
+        "interest": 537.35
+      },
+      {
+        "year": 2025,
+        "revenue": 184972.46,
+        "ebitda": 48601.21,
+        "ebit": 43141.37,
+        "pat": 30302.59,
+        "interest": 470.18
+      },
+      {
+        "year": 2026,
+        "revenue": 193426.09,
+        "ebitda": 48985.03,
+        "ebit": 43688.31,
+        "pat": 31789.89,
+        "interest": 450.99
+      }
+    ],
+    "bs": [
+      {
+        "year": 2022,
+        "equity": null,
+        "debt": null,
+        "assets": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "retained_earnings": null,
+        "receivables": null,
+        "inventory": null
+      },
+      {
+        "year": 2023,
+        "equity": 88508.89,
+        "debt": 9691.46,
+        "assets": 146926.3,
+        "current_assets": 82770.78,
+        "current_liabilities": 45760.94,
+        "retained_earnings": 109398.3,
+        "receivables": 29688.48,
+        "inventory": 88009.93
+      },
+      {
+        "year": 2024,
+        "equity": 101760.28,
+        "debt": 9614.69,
+        "assets": 158546.45,
+        "current_assets": 102882.95,
+        "current_liabilities": 44628.67,
+        "retained_earnings": 120490.7,
+        "receivables": 34735.71,
+        "inventory": 101318.89
+      },
+      {
+        "year": 2025,
+        "equity": 107997.35,
+        "debt": 9230.87,
+        "assets": 167144.02,
+        "current_assets": 108995.29,
+        "current_liabilities": 48092.65,
+        "retained_earnings": 132091.66,
+        "receivables": 34975.6,
+        "inventory": 107517.58
+      },
+      {
+        "year": 2026,
+        "equity": 94419.72,
+        "debt": 9278.85,
+        "assets": 157807.6,
+        "current_assets": 104706.1,
+        "current_liabilities": 52928.78,
+        "retained_earnings": 129145.84,
+        "receivables": 35647.28,
+        "inventory": 93901.56
+      }
+    ],
+    "cf": [
+      {
+        "year": 2022,
+        "op": null,
+        "inv": null,
+        "fin": null
+      },
+      {
+        "year": 2023,
+        "op": 27375.96,
+        "inv": -2091.82,
+        "fin": -31550.0
+      },
+      {
+        "year": 2024,
+        "op": 30206.63,
+        "inv": -6793.61,
+        "fin": -20304.08
+      },
+      {
+        "year": 2025,
+        "op": 41750.02,
+        "inv": -3463.98,
+        "fin": -27587.06
+      },
+      {
+        "year": 2026,
+        "op": 38756.23,
+        "inv": 95.96,
+        "fin": -43035.82
+      }
+    ]
+  },
+  "ratios_src": {
+    "roe": 31.9,
+    "roce": 40.0,
+    "de": 0.1
+  },
+  "peers": [
+    {
+      "ticker": "TCS.NS",
+      "pe": 13.82,
+      "mcap": 741925.03,
+      "roe": null,
+      "roce": 63.03
+    },
+    {
+      "ticker": "HCLTECH.NS",
+      "pe": 18.41,
+      "mcap": 333780.81,
+      "roe": null,
+      "roce": 30.4
+    },
+    {
+      "ticker": "WIPRO.NS",
+      "pe": 11.88,
+      "mcap": 156998.14,
+      "roe": null,
+      "roce": 17.84
+    },
+    {
+      "ticker": "TECHM.NS",
+      "pe": 28.08,
+      "mcap": 149376.24,
+      "roe": null,
+      "roce": 23.12
+    },
+    {
+      "ticker": "LTM.NS",
+      "pe": 21.39,
+      "mcap": 119983.32,
+      "roe": null,
+      "roce": 29.6
+    },
+    {
+      "ticker": "PERSISTENT.NS",
+      "pe": 41.84,
+      "mcap": 83276.23,
+      "roe": null,
+      "roce": 34.36
+    }
+  ],
+  "ar_url": "https://www.bseindia.com/bseplus/AnnualReport/500209/73015500209.pdf#page=243",
+  "fetched_at": "2026-10-01T03:31:27.467840+00:00",
+  "source": "live",
+  "notes": "yfinance+screener live [USD->INR x95.955 (live-USDINR=X)]"
+}

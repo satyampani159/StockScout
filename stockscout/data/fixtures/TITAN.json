@@ -1,0 +1,187 @@
+{
+  "ticker": "TITAN.NS",
+  "name": "Titan Company Limited",
+  "currency": "INR",
+  "units": "INR Cr",
+  "price": 4587.0,
+  "mcap": 407010.15,
+  "pe": 70.918365,
+  "statements": {
+    "pnl": [
+      {
+        "year": 2023,
+        "revenue": 40447.0,
+        "ebitda": 5188.0,
+        "ebit": 4747.0,
+        "pat": 3250.0,
+        "interest": 300.0
+      },
+      {
+        "year": 2024,
+        "revenue": 50936.0,
+        "ebitda": 5826.0,
+        "ebit": 5242.0,
+        "pat": 3496.0,
+        "interest": 619.0
+      },
+      {
+        "year": 2025,
+        "revenue": 60298.0,
+        "ebitda": 6181.0,
+        "ebit": 5488.0,
+        "pat": 3337.0,
+        "interest": 953.0
+      },
+      {
+        "year": 2026,
+        "revenue": 87305.0,
+        "ebitda": 8807.0,
+        "ebit": 7981.0,
+        "pat": 5073.0,
+        "interest": 1180.0
+      }
+    ],
+    "bs": [
+      {
+        "year": 2022,
+        "equity": null,
+        "debt": null,
+        "assets": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "retained_earnings": null,
+        "receivables": null,
+        "inventory": null
+      },
+      {
+        "year": 2023,
+        "equity": 11904.0,
+        "debt": 9367.0,
+        "assets": 27023.0,
+        "current_assets": 22407.0,
+        "current_liabilities": 13264.0,
+        "retained_earnings": 8612.0,
+        "receivables": 674.0,
+        "inventory": 16584.0
+      },
+      {
+        "year": 2024,
+        "equity": 9393.0,
+        "debt": 15528.0,
+        "assets": 31550.0,
+        "current_assets": 25608.0,
+        "current_liabilities": 16529.0,
+        "retained_earnings": 6419.0,
+        "receivables": 1018.0,
+        "inventory": 19051.0
+      },
+      {
+        "year": 2025,
+        "equity": 11624.0,
+        "debt": 20777.0,
+        "assets": 40647.0,
+        "current_assets": 34434.0,
+        "current_liabilities": 25793.0,
+        "retained_earnings": 8779.0,
+        "receivables": 1068.0,
+        "inventory": 28184.0
+      },
+      {
+        "year": 2026,
+        "equity": 15703.0,
+        "debt": 30621.0,
+        "assets": 60561.0,
+        "current_assets": 50781.0,
+        "current_liabilities": 39793.0,
+        "retained_earnings": 12876.0,
+        "receivables": 916.0,
+        "inventory": 42743.0
+      }
+    ],
+    "cf": [
+      {
+        "year": 2022,
+        "op": null,
+        "inv": null,
+        "fin": null
+      },
+      {
+        "year": 2023,
+        "op": 1370.0,
+        "inv": -1811.0,
+        "fin": 457.0
+      },
+      {
+        "year": 2024,
+        "op": 1695.0,
+        "inv": -189.0,
+        "fin": -1329.0
+      },
+      {
+        "year": 2025,
+        "op": -541.0,
+        "inv": 546.0,
+        "fin": -7.0
+      },
+      {
+        "year": 2026,
+        "op": 5590.0,
+        "inv": -2934.0,
+        "fin": -2159.0
+      }
+    ]
+  },
+  "ratios_src": {
+    "roe": 37.7,
+    "roce": 20.5,
+    "de": 1.95
+  },
+  "peers": [
+    {
+      "ticker": "KALYANKJIL.NS",
+      "pe": 39.04,
+      "mcap": 57126.62,
+      "roe": null,
+      "roce": 21.15
+    },
+    {
+      "ticker": "LALITHAA.NS",
+      "pe": 22.38,
+      "mcap": 21375.32,
+      "roe": null,
+      "roce": 37.98
+    },
+    {
+      "ticker": "THANGAMAYL.NS",
+      "pe": 40.06,
+      "mcap": 15733.72,
+      "roe": null,
+      "roce": 25.49
+    },
+    {
+      "ticker": "PCJEWELLER.NS",
+      "pe": 16.7,
+      "mcap": 12946.24,
+      "roe": null,
+      "roce": 9.6
+    },
+    {
+      "ticker": "SKYGOLD.NS",
+      "pe": 37.48,
+      "mcap": 12555.63,
+      "roe": null,
+      "roce": 27.02
+    },
+    {
+      "ticker": "BLUESTONE.NS",
+      "pe": 215.62,
+      "mcap": 12143.62,
+      "roe": null,
+      "roce": 6.78
+    }
+  ],
+  "ar_url": "https://www.bseindia.com/bseplus/AnnualReport/500114/5001140320.pdf#page=5",
+  "fetched_at": "2026-10-01T03:31:31.032247+00:00",
+  "source": "live",
+  "notes": "yfinance+screener live"
+}
